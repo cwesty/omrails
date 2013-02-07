@@ -9,8 +9,13 @@ gem 'devise'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+group :developement do
 gem 'sqlite3'
+end
 
+group :production do
+  gem 'pg'
+end
 gem 'json'
 
 # Gems used only for assets and not required
